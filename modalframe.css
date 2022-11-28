@@ -1,0 +1,116 @@
+.popup {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   background: rgba(0, 0, 0, 0.5);
+   opacity: 0;
+   pointer-events: none;
+   transition: 0.5s all;
+}
+
+.popup.active {
+   opacity: 1;
+   pointer-events: all;
+   transition: 0.5s all;
+}
+
+.popup__form {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(0);
+   background: #fff;
+   width: 400px;
+   padding: 25px;
+   transition: 0.5s all;
+}
+
+.popup__form.active {
+   transform: translate(-50%, -50%) scale(1);
+   transition: 0.5s all;
+}
+
+/* Код для стилизации формы */
+.popup__close {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   cursor: pointer;
+}
+
+.popup__form label {
+   width: 100%;
+   margin-bottom: 25px;
+   display: flex;
+   flex-direction: column-reverse;
+}
+
+.popup__form .popup__text {
+   font-size: 14px;
+   text-transform: uppercase;
+   font-weight: 500;
+   color: #cfd0d3;
+   margin-bottom: 5px;
+}
+
+.popup__form input {
+   height: 45px;
+   font-size: 18px;
+   border: none;
+   outline: none;
+   border-bottom: 1px solid #cfd0d3;
+}
+
+.popup__form input:focus {
+   border-bottom: 1px solid #db18aa;
+}
+
+.popup__form input:focus + .popup__text {
+   color: #db18aa;
+}
+
+.popup__form textarea {
+   resize: none;
+   width: 100%;
+   height: 150px;
+   border: none;
+   outline: none;
+   border-bottom: 1px solid #cfd0d3;
+   font-size: 18px;
+   padding-top: 5px;
+}
+
+.popup__form textarea:focus {
+   border-bottom: 1px solid #db18aa;
+}
+
+.popup__form textarea:focus + .popup__text {
+   color: #db18aa;
+}
+
+.popup__form button {
+   width: 100%;
+   height: 45px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   font-size: 18px;
+   border: 2px solid #db18aa;
+   background: #db18aa;
+   cursor: pointer;
+   text-transform: uppercase;
+   transition: 0.5s all;
+}
+
+.popup__form button:hover {
+   background: #fff;
+   color: #db18aa;
+   transition: 0.5s all;
+}
+
+.popup__close {
+   height: 20px;
+}

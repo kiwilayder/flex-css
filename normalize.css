@@ -1,5 +1,13 @@
 @media (max-width: 950px) {
-   .about__img-beer {
+   .about__img-beer--no-pading {
+      padding: 0px 20px 0px 0px;
+   }
+
+   .about__img-beer--resize {
+      padding: 0px;
+   }
+
+   .about__img-beer--size {
       padding: 0px;
    }
 
@@ -39,6 +47,10 @@
       flex-direction: column;
       margin: 20px 0px 0px 0px;
    }
+
+   .menu__link--green-price {
+      padding: auto;
+   }
 }
 
 @media (max-width: 770px) {
@@ -68,22 +80,27 @@
       left: -350px;
       top: 0px;
       background-color: rgb(143, 15, 143);
-      padding: 60px 20px 30px 20px;
+      padding: 90px 20px 30px 20px;
       transition: transform 0.5s;
    }
 
    .menu__items {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
       width: 100%;
    }
 
    .menu__link {
       color: white;
-      padding: 20px 50px;
+      padding: 10px 60px;
       font-size: 19px;
       display: block;
-      padding: 20px 0;
       text-align: center;
+   }
+
+   .menu__link--padding-bottom {
+      padding-bottom: 20px;
    }
 
    .menu.open .menu__list {

@@ -10,6 +10,8 @@
       />
       <link rel="stylesheet" href="styles.css" />
       <link rel="stylesheet" href="normalize.css" />
+      <link rel="stylesheet" href="modalframe.css" />
+
       <script defer src="index.js"></script>
    </head>
    <body>
@@ -26,9 +28,11 @@
                   <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
                   <li class="menu__item"><a class="menu__link" href="#">Project</a></li>
                   <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-                  <li class="menu__item"><a class="menu__link" href="#">Contacts</a></li>
                   <li class="menu__item">
-                     <a class="menu__link menu__link--green" href="#">TRY</a>
+                     <a class="menu__link menu__link--padding-bottom" href="#">Contacts</a>
+                  </li>
+                  <li class="menu__item">
+                     <a class="menu__button" href="#">TRY</a>
                   </li>
                </ul>
             </div>
@@ -45,12 +49,12 @@
                   nesciunt laudantium laboriosam, corrupti molestiae illo repudiandae quam saepe.
                </div>
                <div class="about__take-button">
-                  <a class="menu__link--green" href="#">TRY</a>
-                  <a class="menu__link--green" href="#">TRY</a>
+                  <a class="menu__button" href="#">TRY</a>
+                  <a class="menu__button" href="#">TRY</a>
                </div>
             </div>
             <div class="about__img">
-               <img class="about__img-beer" src="img/head.png" alt="face" />
+               <img class="about__img-beer about__img-beer--resize" src="img/head.png" alt="face" />
             </div>
          </div>
       </div>
@@ -134,19 +138,19 @@
                <p>Standart</p>
                <h1 class="price-green">$100</h1>
                <p>Lorem</p>
-               <a class="menu__link menu__link--green menu__link--green-price" href="#">TRY</a>
+               <a class="menu__button menu__button--green" href="#">TRY</a>
             </div>
             <div class="catalog__item catalog__item--size">
                <p>Premium</p>
                <h1 class="price-blue">$300</h1>
                <p>Lorem</p>
-               <a class="menu__link menu__link--green menu__link--blue-price" href="#">TRY</a>
+               <a class="menu__button menu__button--blue" href="#">TRY</a>
             </div>
             <div class="catalog__item catalog__item--size">
                <p>Ulta</p>
                <h1 class="price-red">$500</h1>
                <p>Lorem</p>
-               <a class="menu__link menu__link--green menu__link--red-price" href="#">TRY</a>
+               <a class="menu__button menu__button--red" href="#">TRY</a>
             </div>
          </div>
       </div>
@@ -241,5 +245,24 @@
             </div>
          </div>
       </footer>
+
+      <div class="popup">
+         <form class="popup__form">
+            <img src="img/close.png" class="popup__close" />
+            <label>
+               <input type="text" name="name" />
+               <div class="popup__text">Ваше имя</div>
+            </label>
+            <label>
+               <input type="tel" name="tel" />
+               <div class="popup__text">Ваш телефон</div>
+            </label>
+            <label>
+               <textarea name="message"></textarea>
+               <div class="popup__text">Ваше сообщение</div>
+            </label>
+            <button class="menu__link" type="submit">Отправить</button>
+         </form>
+      </div>
    </body>
 </html>

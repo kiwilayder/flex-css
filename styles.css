@@ -76,10 +76,8 @@ body {
    text-decoration: none;
 }
 
-.menu__link--green {
-   align-items: center;
+.menu__button {
    border-radius: 10px;
-   /* border: solid 3px black; */
    color: white;
    background: #db18aa;
    padding: 10px 60px;
@@ -270,33 +268,33 @@ body {
    justify-content: center;
 }
 
-.menu__link--red-price {
+.menu__button--red {
    background: rgb(221, 61, 61);
 }
 
-.menu__link--green-price {
+.menu__button--green {
    background: rgb(1, 92, 13);
 }
 
-.menu__link--blue-price {
+.menu__button--blue {
    background: rgb(5, 28, 158);
 }
 
 .price-green {
-   color: rgb(1, 92, 13);
-   font-size: 60px;
+   font-size: 70px;
+   color: green;
    margin: 0px;
 }
 
 .price-blue {
-   color: rgb(5, 28, 158);
-   font-size: 60px;
+   font-size: 70px;
+   color: blue;
    margin: 0px;
 }
 
 .price-red {
-   color: rgb(221, 61, 61);
-   font-size: 60px;
+   font-size: 70px;
+   color: red;
    margin: 0px;
 }
 
