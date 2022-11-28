@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Flexbox-css</title>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="styles.css" />
+      <link rel="stylesheet" href="normalize.css" />
+      <script defer src="index.js"></script>
+   </head>
+   <body>
+      <header class="menu">
+         <div class="menu__container">
+            <button class="menu__burger-btn" id="burger">
+               <span class="menu__span-line"></span>
+               <span class="menu__span-line"></span>
+               <span class="menu__span-line"></span>
+            </button>
+            <img class="menu__logo" src="img/logo.png" alt="logo" />
+            <div class="menu__list">
+               <ul class="menu__items">
+                  <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Project</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Contacts</a></li>
+                  <li class="menu__item">
+                     <a class="menu__link menu__link--green" href="#">TRY</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </header>
+
+      <div class="about">
+         <div class="about__wrapper">
+            <div class="about__text">
+               <div class="about__title">Lorem, ipsum dolor.</div>
+               <div class="about__subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ad at sequi, autem minima
+                  a, dignissimos quas ab incidunt est et totam sed, corrupti molestiae! Explicabo placeat
+                  nesciunt laudantium laboriosam, corrupti molestiae illo repudiandae quam saepe.
+               </div>
+               <div class="about__take-button">
+                  <a class="menu__link--green" href="#">TRY</a>
+                  <a class="menu__link--green" href="#">TRY</a>
+               </div>
+            </div>
+            <div class="about__img">
+               <img class="about__img-beer" src="img/head.png" alt="face" />
+            </div>
+         </div>
+      </div>
+
+      <div class="catalog">
+         <div class="main-title">
+            <h1 class="main-title__title">Lorem ipsum dolor sit.</h1>
+            <span class="main-title__subtitle">Lorem, ipsum.</span>
+         </div>
+         <div class="catalog__list">
+            <div class="catalog__item">
+               <img class="catalog__img" src="img/logo.png" alt="logo" />
+
+               <span class="catalog__description-title">Lorem</span>
+               <span class="catalog__description">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="catalog__item">
+               <img class="catalog__img" src="img/logo.png" alt="logo" />
+
+               <span class="catalog__description-title">Lorem</span>
+               <span class="catalog__description">Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="catalog__item">
+               <img class="catalog__img" src="img/logo.png" alt="logo" />
+
+               <span class="catalog__description-title">Lorem</span>
+               <span class="catalog__description">Lorem ipsum dolor sit amet.</span>
+            </div>
+         </div>
+      </div>
+      <div class="info">
+         <div class="container-info">
+            <div class="info__item">
+               <h1 class="info__title">400+</h1>
+               <span class="info__subtitle">Lorem ipsum dolor sit.</span>
+            </div>
+            <div class="info__item">
+               <h1 class="info__title">100+</h1>
+               <span class="info__subtitle">Lorem ipsum dolor sit.</span>
+            </div>
+            <div class="info__item">
+               <h1 class="info__title">50+</h1>
+               <span class="info__subtitle">Lorem ipsum dolor sit.</span>
+            </div>
+         </div>
+      </div>
+      <div class="about">
+         <div class="about__text">
+            <div class="about__title">Lorem, ipsum dolor.</div>
+            <div class="about__subtitle">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam reprehenderit saepe, taque
+               iure beatae eum praesentium dolorum sapiente nostrum doloremque id? Autem ipsum odio nulla
+               optio commodi modi totam sit!
+            </div>
+         </div>
+         <div class="about__img about__img--position">
+            <img class="about__img-beer about__img-beer--size" src="img/cup-beer.png" alt="cup-beer" />
+         </div>
+      </div>
+      <hr class="line" />
+      <div class="about about--position">
+         <div class="about__text">
+            <div class="about__title">Lorem, ipsum...</div>
+            <div class="about__subtitle">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam reprehenderit saepe, taque
+               iure beatae eum praesentium dolorum sapiente nostrum doloremque id? Autem ipsum odio nulla
+               optio commodi modi totam sit!
+            </div>
+         </div>
+         <div class="about__img about__img--position">
+            <img class="about__img-beer about__img-beer--no-pading" src="img/hmel.png" alt="hmel" />
+         </div>
+      </div>
+      <div class="catalog catalog--size">
+         <div class="main-title">
+            <h1 class="main-title__title">Lorem, ipsum dolor.</h1>
+            <span class="main-title__subtitle">Lorem ipsum dolor sit amet.</span>
+         </div>
+         <div class="catalog__list">
+            <div class="catalog__item catalog__item--size">
+               <p>Standart</p>
+               <h1 class="price-green">$100</h1>
+               <p>Lorem</p>
+               <a class="menu__link menu__link--green menu__link--green-price" href="#">TRY</a>
+            </div>
+            <div class="catalog__item catalog__item--size">
+               <p>Premium</p>
+               <h1 class="price-blue">$300</h1>
+               <p>Lorem</p>
+               <a class="menu__link menu__link--green menu__link--blue-price" href="#">TRY</a>
+            </div>
+            <div class="catalog__item catalog__item--size">
+               <p>Ulta</p>
+               <h1 class="price-red">$500</h1>
+               <p>Lorem</p>
+               <a class="menu__link menu__link--green menu__link--red-price" href="#">TRY</a>
+            </div>
+         </div>
+      </div>
+      <div class="catalog catalog--color-feedback">
+         <div class="main-title">
+            <h1 class="main-title__title main-title__title--color">Lorem, ipsum dolor.</h1>
+            <span class="main-title__subtitle main-title__subtitle--color">Lorem ipsum dolor sit amet.</span>
+         </div>
+         <div class="catalog__list catalog__list--size">
+            <div class="catalog__item catalog__item--size-feedback">
+               <div class="profile">
+                  <p class="profile__text">
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae sed vitae minima? Dicta ad
+                     odit eaque impedit molestias soluta expedita?
+                  </p>
+                  <div class="profile__img">
+                     <img class="profile__avatar" src="img/head.png" alt="head" />
+                     <p>John</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="catalog__item catalog__item--size-feedback">
+               <div class="profile">
+                  <p class="profile__text">
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae sed vitae minima? Dicta ad
+                     odit eaque impedit molestias soluta expedita?
+                  </p>
+                  <div class="profile__img">
+                     <img class="profile__avatar" src="img/hmel.png" alt="hmel" />
+                     <p>Joe</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="catalog__item catalog__item--size-feedback">
+               <div class="profile">
+                  <p class="profile__text">
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae sed vitae minima? Dicta ad
+                     odit eaque impedit molestias soluta expedita?
+                  </p>
+                  <div class="profile__img">
+                     <img class="profile__avatar" src="img/cup-beer.png" alt="cup" />
+                     <p>Lie</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <footer class="footer">
+         <div class="footer__wrapper">
+            <div class="faq">
+               <h1 class="faq__title">FAQ</h1>
+               <p class="faq__subtitle">Some questions & some answers</p>
+            </div>
+            <div class="footer__line">
+               <div class="paragraph-one">
+                  <h1>Lorem ipsum dolor.</h1>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. At et provident dolores quod
+                     sunt nobis consectetur odit, ipsam quisquam optio ut laborum amet quam possimus labore
+                     eius aliquam repellat excepturi!
+                  </p>
+               </div>
+               <div class="paragraph">
+                  <h1>Lorem ipsum dolor.</h1>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. At et provident dolores quod
+                     sunt nobis consectetur odit, ipsam quisquam optio ut laborum amet quam possimus labore
+                     eius aliquam repellat excepturi!
+                  </p>
+               </div>
+            </div>
+            <div class="footer__line">
+               <div class="paragraph-one">
+                  <h1>Lorem ipsum dolor.</h1>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. At et provident dolores quod
+                     sunt nobis consectetur odit, ipsam quisquam optio ut laborum amet quam possimus labore
+                     eius aliquam repellat excepturi!
+                  </p>
+               </div>
+               <div class="paragraph">
+                  <h1>Lorem ipsum dolor.</h1>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. At et provident dolores quod
+                     sunt nobis consectetur odit, ipsam quisquam optio ut laborum amet quam possimus labore
+                     eius aliquam repellat excepturi!
+                  </p>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>

@@ -1,0 +1,387 @@
+body {
+   font-family: "Montserrat", sans-serif;
+   margin: 0;
+}
+
+.menu__container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   box-shadow: 0px -10px 20px;
+   background: rgb(44, 44, 44);
+   position: relative;
+   padding-left: 50px;
+   padding-right: 50px;
+}
+
+.menu__burger-btn {
+   display: none;
+   position: relative;
+   width: 40px;
+   height: 40px;
+   border: none;
+   background: transparent;
+}
+
+.menu__span-line {
+   position: absolute;
+   width: 30px;
+   height: 3px;
+   background-color: violet;
+   left: 5px;
+   transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
+}
+.menu__span-line:nth-child(1) {
+   transform: translateY(-8px);
+}
+
+.menu__span-line:nth-child(3) {
+   transform: translateY(8px);
+}
+
+.open .menu__span-line:nth-child(1) {
+   transform: translateY(0) rotate(45deg);
+}
+
+.open .menu__span-line:nth-child(2) {
+   opacity: 0;
+}
+
+.open .menu__span-line:nth-child(3) {
+   transform: translateY(0) rotate(-45deg);
+}
+
+.open .menu__span-line {
+   background-color: white;
+}
+
+.menu__logo {
+   max-height: 85px;
+}
+
+.menu__items {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   list-style: none;
+   padding: 0px;
+   width: 500px;
+   font-size: 16px;
+   margin: 0px;
+}
+
+.menu__link {
+   color: white;
+   text-decoration: none;
+}
+
+.menu__link--green {
+   align-items: center;
+   border-radius: 10px;
+   /* border: solid 3px black; */
+   color: white;
+   background: #db18aa;
+   padding: 10px 60px;
+   text-decoration: none;
+}
+
+.about {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   background: white;
+}
+
+.about__wrapper {
+   display: flex;
+   flex-direction: row;
+   margin: 20px;
+}
+
+.about__text {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.about__title {
+   font-size: 33px;
+   color: black;
+}
+
+.about__subtitle {
+   width: 400px;
+   margin-top: 10px;
+   color: black;
+}
+
+.about__take-button {
+   margin-top: 20px;
+}
+
+.about__img {
+   display: flex;
+   align-items: flex-end;
+}
+
+.about__img-beer {
+   display: flex;
+   padding-bottom: 0px;
+   padding-left: 50px;
+   height: 280px;
+}
+
+.catalog {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background: rgb(32, 32, 32);
+   height: 100%;
+}
+
+.main-title {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   margin-top: 30px;
+   font-size: 25px;
+}
+
+.main-title__title {
+   color: white;
+   font-size: 20px;
+   margin: 0px;
+}
+
+.main-title__subtitle {
+   color: white;
+}
+
+.catalog__list {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   margin-top: 30px;
+   margin-bottom: 60px;
+   width: 80%;
+}
+
+.catalog__item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 250px;
+   height: 355px;
+   background: rgba(255, 255, 255, 0.925);
+   border-radius: 25px;
+}
+
+.catalog__img {
+   height: 230px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.catalog__description-title {
+   color: black;
+   font-weight: bold;
+   font-size: 25px;
+}
+
+.catalog__description {
+   color: black;
+}
+
+.info {
+   display: flex;
+   flex-direction: row;
+   position: relative;
+   height: 100%;
+   background: linear-gradient(to left, #531cb3, #db18aa);
+   align-items: center;
+   justify-content: space-around;
+}
+
+.info__item {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.info__title {
+   color: white;
+   font-size: 90px;
+   margin: 0px;
+}
+
+.info__subtitle {
+   color: white;
+   font-size: 17px;
+}
+
+.line {
+   width: 70%;
+   height: 1px;
+   margin-top: 20px;
+   background-color: black;
+}
+
+.container-info {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 80%;
+   position: relative;
+   margin: 20px 200px;
+}
+
+.about__img--position {
+   align-items: center;
+}
+
+.about__img-beer--size {
+   padding-bottom: 30px;
+   padding-top: 30px;
+}
+
+.about--position {
+   flex-direction: row-reverse;
+   background: rgba(255, 255, 255, 0.925);
+}
+
+.about__img-beer--no-pading {
+   padding: 30px 50px 30px 0px;
+}
+
+.about__img-beer--size {
+   height: 280px;
+}
+
+.catalog__item--size {
+   width: 250px;
+   height: 250px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.menu__link--red-price {
+   background: rgb(221, 61, 61);
+}
+
+.menu__link--green-price {
+   background: rgb(1, 92, 13);
+}
+
+.menu__link--blue-price {
+   background: rgb(5, 28, 158);
+}
+
+.price-green {
+   color: rgb(1, 92, 13);
+   font-size: 60px;
+   margin: 0px;
+}
+
+.price-blue {
+   color: rgb(5, 28, 158);
+   font-size: 60px;
+   margin: 0px;
+}
+
+.price-red {
+   color: rgb(221, 61, 61);
+   font-size: 60px;
+   margin: 0px;
+}
+
+.catalog--size {
+   height: 100%;
+   padding-bottom: 40px;
+}
+
+.catalog__item--size-feedback {
+   width: 300px;
+   height: 200px;
+   align-items: center;
+   justify-content: center;
+}
+
+.catalog--color-feedback {
+   background: rgb(228, 228, 228);
+   height: 100%;
+}
+
+.catalog__list--size {
+   width: 80%;
+   margin-bottom: 40px;
+}
+
+.main-title__title--color {
+   color: rgb(0, 0, 0);
+}
+
+.main-title__subtitle--color {
+   color: rgb(0, 0, 0);
+}
+
+.profile {
+   display: flex;
+   flex-direction: column;
+   width: 260px;
+}
+
+.profile__avatar {
+   width: 80px;
+   margin-right: 15px;
+}
+
+.profile__img {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.profile__text {
+   font-size: 13px;
+}
+
+.footer {
+   height: 500px;
+   display: flex;
+   justify-content: center;
+}
+
+.footer__wrapper {
+   display: flex;
+   flex-direction: column;
+   width: 1000px;
+}
+
+.faq {
+   display: flex;
+   flex-direction: column;
+   margin-top: 50px;
+}
+
+.faq__title {
+   margin: 0px;
+}
+
+.faq__subtitle {
+   margin: 0px;
+}
+
+.footer__line {
+   display: flex;
+   flex-direction: row;
+}
+
+.paragraph-one {
+   padding-right: 10px;
+}
